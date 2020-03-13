@@ -23,6 +23,8 @@ ReactDOM.render(
   <div>
     <Header text="Your dog stonks" />,
     <Header text="Your mom stonks" />
+    <People name="Micky" />
+    <People />
     <People />
     <CustomDate />
     <FruitLoops fruit={fruit} />
