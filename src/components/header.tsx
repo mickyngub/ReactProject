@@ -9,7 +9,7 @@ type HeaderProps = {
 };*/
 function Header(props: HeaderProps) {
   React.useEffect(() => {
-    alert(document.querySelector("#myid"));
+    //alert(document.querySelector("#myid"));
   });
 
   return (

@@ -7,9 +7,9 @@ import Test from "./components/Micky";
 import Header from "./components/header";
 import { CustomDate } from "./components/custom-date";
 import FruitLoops from "./components/fruit-loops";
-import People from "./components/People";
+// import People from "./components/People";
 import NewPost from "./components/State";
-import Individual from "./components/SetStateHook";
+//import Individual from "./components/SetStateHook";
 
 let fruit: Array<string> = ["yellow", "blue", "green", "pink", "red"];
 // let person: [
@@ -29,13 +29,14 @@ ReactDOM.render(
   <div>
     <Header text="Your dog stonks" />,
     <Header text="Your mom stonks" />
-    <People name="Micky" />
-    <People name="Opal">Aod pai Huahin</People>
-    <People />
+    {/* <People /> */}
+    {/* <People name="Micky" />
+    <People name="Opal">Aod pai Huahin</People> */}
+    {/* <People /> */}
     <CustomDate />
     <FruitLoops fruit={fruit} />
     <NewPost />
-    <Individual />
+    {/* <Individual /> */}
     <p>Yeah man</p>
   </div>,
   document.querySelector("#micky3")
