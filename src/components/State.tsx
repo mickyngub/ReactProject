@@ -6,9 +6,9 @@ class NewPost extends Component {
     person: [{ name: "Micky" }, { name: "Opal" }]
   };
 
-  switchNameHandler = () => {
+  switchNameHandler = (newName: string) => {
     console.log("was clicked");
-    this.setState({ person: [{ name: "Mickyngub" }, { name: "Opalpal" }] });
+    this.setState({ person: [{ name: newName }, { name: "Opalpal" }] });
   };
   render() {
     return (
@@ -16,9 +16,11 @@ class NewPost extends Component {
         <People name={this.state.person[0].name} />
         <People
           name={this.state.person[1].name}
-          click={this.switchNameHandler}
+          click={this.switchNameHandler.bind(this, "Slicky")}
         />
-        <button onClick={this.switchNameHandler}>Switch Name</button>
+        <button onClick={this.switchNameHandler.bind(this, "Micky!!!")}>
+          Switch Name
+        </button>
       </div>
     );
   }
