@@ -9,6 +9,7 @@ import { CustomDate } from "./components/custom-date";
 import FruitLoops from "./components/fruit-loops";
 import People from "./components/People";
 import NewPost from "./components/State";
+import Individual from "./components/SetStateHook";
 
 let fruit: Array<string> = ["yellow", "blue", "green", "pink", "red"];
 // let person: [
@@ -34,6 +35,7 @@ ReactDOM.render(
     <CustomDate />
     <FruitLoops fruit={fruit} />
     <NewPost />
+    <Individual />
     <p>Yeah man</p>
   </div>,
   document.querySelector("#micky3")
