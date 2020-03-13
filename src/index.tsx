@@ -24,7 +24,7 @@ ReactDOM.render(
     <Header text="Your dog stonks" />,
     <Header text="Your mom stonks" />
     <People name="Micky" />
-    <People />
+    <People name="Opal">Aod pai Huahin</People>
     <People />
     <CustomDate />
     <FruitLoops fruit={fruit} />

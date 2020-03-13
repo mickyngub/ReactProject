@@ -1,14 +1,18 @@
 import React from "react";
 
 type PersonProps = {
-  name?: string;
+  name?: any;
+  children?: any;
 };
 
 const Person = (props: PersonProps) => {
   return (
-    <p>
-      I'm {props.name} and I'm {Math.random()} years old!
-    </p>
+    <div>
+      <p>
+        I'm {props.name} and I'm {Math.random()} years old!
+      </p>
+      <p>{props.children}</p>
+    </div>
   );
 };
 
