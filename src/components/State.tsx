@@ -17,6 +17,13 @@ class NewPost extends Component {
     });
   };
   render() {
+    const style = {
+      backgroundColor: "white",
+      font: "inherit",
+      border: "1px solid blue",
+      padding: "8px",
+      cursor: "pointer"
+    };
     return (
       <div>
         <People name={this.state.person[0].name} />
@@ -25,7 +32,10 @@ class NewPost extends Component {
           click={this.switchNameHandler.bind(this, "Slicky")}
           changed={this.nameChangedHandler}
         />
-        <button onClick={() => this.switchNameHandler("SuperMicky")}>
+        <button
+          style={style}
+          onClick={() => this.switchNameHandler("SuperMicky")}
+        >
           Switch Name
         </button>
       </div>
