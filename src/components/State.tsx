@@ -18,7 +18,7 @@ class NewPost extends Component {
           name={this.state.person[1].name}
           click={this.switchNameHandler.bind(this, "Slicky")}
         />
-        <button onClick={this.switchNameHandler.bind(this, "Micky!!!")}>
+        <button onClick={() => this.switchNameHandler("SuperMicky")}>
           Switch Name
         </button>
       </div>
