@@ -4,7 +4,7 @@ function CustomDate() {
   let [date, setDate] = React.useState("");
 
   let getDate = () => {
-    setDate(new Date().toTimeString());
+    setDate(new Date().toString());
     alert("yeah");
   };
   return (

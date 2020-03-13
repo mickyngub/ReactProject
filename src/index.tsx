@@ -8,8 +8,13 @@ import Header from "./components/header";
 import { CustomDate } from "./components/custom-date";
 import FruitLoops from "./components/fruit-loops";
 import People from "./components/People";
+import NewPost from "./components/State";
 
 let fruit: Array<string> = ["yellow", "blue", "green", "pink", "red"];
+// let person: [
+//     { name: "Micky" },
+//     { name: "Opal"}
+// ]
 //ReactDOM.render(<App />, document.getElementById("root"));
 ReactDOM.render(<Test />, document.getElementById("micky"));
 ReactDOM.render(
@@ -28,6 +33,7 @@ ReactDOM.render(
     <People />
     <CustomDate />
     <FruitLoops fruit={fruit} />
+    <NewPost />
     <p>Yeah man</p>
   </div>,
   document.querySelector("#micky3")
