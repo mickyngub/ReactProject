@@ -30,22 +30,28 @@ class NewPost extends Component {
       padding: "8px",
       cursor: "pointer"
     };
+
+    let persons = null;
+
+    if (this.state.showPersons) {
+      persons = (
+        <div>
+          {console.log("was clicked show person")}
+          <People name={this.state.person[0].name} />
+          <People
+            name={this.state.person[1].name}
+            click={this.switchNameHandler.bind(this, "Slicky")}
+            changed={this.nameChangedHandler}
+          />
+        </div>
+      );
+    }
     return (
       <div>
-        {this.state.showPersons ? (
-          <div>
-            {console.log("was clicked show person")}
-            <People name={this.state.person[0].name} />
-            <People
-              name={this.state.person[1].name}
-              click={this.switchNameHandler.bind(this, "Slicky")}
-              changed={this.nameChangedHandler}
-            />
-          </div>
-        ) : null}
         <button style={style} onClick={this.togglePersonsHandler}>
           Switch Name
         </button>
+        {persons}
       </div>
     );
   }
