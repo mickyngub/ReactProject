@@ -23,15 +23,20 @@ const Individual = () => {
     setShowPersonsState(!showPersonsState);
   };
 
+  let persons = null;
+
+  if (showPersonsState) {
+    persons = (
+      <div>
+        <People name={personState.person[0].name} />
+        <People name={personState.person[1].name} />
+      </div>
+    );
+  }
   return (
     <div>
       <button onClick={switchShowHandler}>SwitchNameUseState</button>
-      {showPersonsState ? (
-        <div>
-          <People name={personState.person[0].name} />
-          <People name={personState.person[1].name} />
-        </div>
-      ) : null}
+      {persons}
     </div>
   );
 };
