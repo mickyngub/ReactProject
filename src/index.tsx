@@ -10,6 +10,7 @@ import FruitLoops from "./components/fruit-loops";
 // import People from "./components/People";
 import NewPost from "./components/State";
 //import Individual from "./components/SetStateHook";
+import "./App.css";
 
 let fruit: Array<string> = ["yellow", "blue", "green", "pink", "red"];
 // let person: [
@@ -19,14 +20,14 @@ let fruit: Array<string> = ["yellow", "blue", "green", "pink", "red"];
 //ReactDOM.render(<App />, document.getElementById("root"));
 ReactDOM.render(<Test />, document.getElementById("micky"));
 ReactDOM.render(
-  <div>
+  <div className="App">
     <h1>Today is Thursday</h1>
     <a href="#">Click</a>
   </div>,
   document.querySelector("#micky2")
 );
 ReactDOM.render(
-  <div>
+  <div className="App">
     <Header text="Your dog stonks" />,
     <Header text="Your mom stonks" />
     {/* <People /> */}
