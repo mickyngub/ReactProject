@@ -8,6 +8,10 @@ type PersonProps = {
 };
 
 const Person = (props: PersonProps) => {
+  const rnd = Math.random();
+  if (rnd > 0.7) {
+    throw new Error("Something went wrong");
+  }
   return (
     <div className="People">
       <p onClick={props.click}>

@@ -9,7 +9,7 @@ import { CustomDate } from "./components/custom-date";
 import FruitLoops from "./components/fruit-loops";
 // import People from "./components/People";
 import NewPost from "./components/State";
-//import Individual from "./components/SetStateHook";
+// import Individual from "./components/SetStateHook";
 import "./App.css";
 
 let fruit: Array<string> = ["yellow", "blue", "green", "pink", "red"];
