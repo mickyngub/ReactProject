@@ -11,6 +11,7 @@ type NewPostProps = {
 class NewPost extends Component<NewPostProps> {
   constructor(props: NewPostProps) {
     super(props);
+    console.log("[State.tsx] constructor");
   }
 
   state = {
@@ -21,6 +22,15 @@ class NewPost extends Component<NewPostProps> {
     ],
     showPersons: false
   };
+
+  static getDerivedStateFromProps(props: any, state: any) {
+    console.log("[State.tsx] getDerivedStateFromProps", props);
+    return state;
+  }
+
+  componentDidMount() {
+    console.log("[State.tsx] componentDidMount");
+  }
 
   switchNameHandler = (newName: string) => {
     console.log("was clicked");
@@ -63,6 +73,7 @@ class NewPost extends Component<NewPostProps> {
     this.setState({ showPersons: !doesShow });
   };
   render() {
+    console.log("[State.tsx] render");
     let persons = null;
 
     if (this.state.showPersons) {

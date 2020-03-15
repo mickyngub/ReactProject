@@ -7,6 +7,7 @@ type personsProps = {
 };
 
 const persons = (props: personsProps) => {
+  console.log("[Peoplesss.tsx] rendering....");
   return props.person.map((person: any, index: any) => {
     return (
       <People

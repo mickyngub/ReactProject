@@ -8,6 +8,7 @@ type PersonProps = {
 };
 
 const Person = (props: PersonProps) => {
+  console.log("[People.tsx] rendering");
   // const rnd = Math.random();
   // if (rnd > 0.7) {
   //   throw new Error("Something went wrong");
