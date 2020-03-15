@@ -1,5 +1,5 @@
 import React from "react";
-import People from ".././components/People";
+import People from "./People/People";
 
 // type IndividualProps = {
 //   name?: any;
