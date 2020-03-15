@@ -1,9 +1,18 @@
 import React, { Component } from "react";
 import Peoplesss from "./People/Peopless";
 import Cockpit from "../components/Cockpit/Cockpit";
+
 // import ErrorBoundary from "./ErrorBoundary";
 
-class NewPost extends Component {
+type NewPostProps = {
+  title?: any;
+};
+
+class NewPost extends Component<NewPostProps> {
+  constructor(props: NewPostProps) {
+    super(props);
+  }
+
   state = {
     person: [
       { id: "6969", name: "Micky" },
@@ -77,7 +86,7 @@ class NewPost extends Component {
     }
     return (
       <div>
-        <Cockpit clicked={this.togglePersonsHandler} />
+        <Cockpit title={this.props.title} clicked={this.togglePersonsHandler} />
         {persons}
       </div>
     );

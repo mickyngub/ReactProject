@@ -1,6 +1,7 @@
 import React from "react";
 
 type cockpitProps = {
+  title?: any;
   clicked?: any;
 };
 const cockpit = (props: cockpitProps) => {
@@ -16,7 +17,7 @@ const cockpit = (props: cockpitProps) => {
     <div>
       <h1>No! this is patrick</h1>
       <button style={style} onClick={props.clicked}>
-        Switch Name
+        {props.title}
       </button>
     </div>
   );

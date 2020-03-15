@@ -36,7 +36,7 @@ ReactDOM.render(
     {/* <People /> */}
     <CustomDate />
     <FruitLoops fruit={fruit} />
-    <NewPost />
+    <NewPost title="where is the manager?" />
     {/* <Individual /> */}
     <p>Yeah man</p>
   </div>,
